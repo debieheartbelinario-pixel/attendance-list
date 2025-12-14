@@ -1,4 +1,3 @@
-// src/students.js
 const studentNames = [
     "Acabal, Justine Lee R.",
     "Adaza, Dea Jane P.",
@@ -38,7 +37,7 @@ const studentNames = [
 ];
 
 const initialStudents = studentNames.map((name, index) => ({
-    id: index + 1, // Unique ID for key
+    id: index + 1,
     rollNo: index + 1,
     name: name,
     status: 'P', // Default to Present (P), other options: Absent (A), Leave (L)
