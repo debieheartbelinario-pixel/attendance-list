@@ -1,4 +1,4 @@
-
+/* src/App.css */
 body {
     background-color: #f0f2f5;
     font-family: Arial, sans-serif;
@@ -6,3 +6,176 @@ body {
     padding: 0;
 }
 
+.attendance-portal-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+.portal-header {
+    background-color: #34495e;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portal-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.academic-year {
+    font-size: 14px;
+}
+
+/* Main Content Box */
+.attendance-form-box {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.attendance-form-box h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Add Student / Class Buttons */
+.add-student-area button {
+    padding: 8px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-add-student {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-add-class {
+    background-color: #3498db;
+    color: white;
+    opacity: 0.7; /* Indicate non-functional/simplified */
+}
+
+.add-student-input {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+/* Class Selection */
+.class-selection {
+    margin: 20px 0;
+}
+
+.class-selection label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.class-selection select {
+    padding: 5px;
+}
+
+/* Attendance List Rows */
+.student-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Status Colors (Matching the image) */
+.student-row.bg-green-500 { background-color: #2ecc71; } /* Present */
+.student-row.bg-red-500 { background-color: #e74c3c; } /* Absent */
+.student-row.bg-yellow-500 { background-color: #f39c12; } /* Leave */
+
+.student-name {
+    flex-grow: 1;
+}
+
+.student-info {
+    font-size: 14px;
+    margin-right: 20px;
+    opacity: 0.8;
+}
+
+/* Status Buttons (A, P, L) */
+.status-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.status-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Default state */
+}
+
+.status-active {
+    background-color: black;
+    color: white;
+}
+
+.status-inactive:hover {
+    background-color: #eee;
+}
+
+.delete-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Summary Section */
+.summary {
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.summary h3 {
+    margin-bottom: 10px;
+}
+
+.summary p {
+    margin: 5px 0;
+}
+
+.submit-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
