@@ -1,4 +1,3 @@
-// src/StudentForm.jsx
 import React, { useState } from 'react';
 
 const StudentForm = ({ onAddStudent }) => {
@@ -6,7 +5,7 @@ const StudentForm = ({ onAddStudent }) => {
 
   const handleSubmit = () => {
     onAddStudent(newStudentName);
-    setNewStudentName(''); // Clear the input after submission
+    setNewStudentName(''); 
   };
 
   return (
@@ -21,7 +20,7 @@ const StudentForm = ({ onAddStudent }) => {
       <button
         onClick={handleSubmit}
         className="btn-add-student"
-        disabled={newStudentName.trim() === ''} // Disable if input is empty
+        disabled={newStudentName.trim() === ''} 
       >
         Add Student
       </button>
