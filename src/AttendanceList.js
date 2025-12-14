@@ -1,4 +1,4 @@
-// src/AttendanceList.jsx
+
 import React from 'react';
 
 const AttendanceList = ({ student, updateStudentStatus, deleteStudent }) => {
@@ -42,7 +42,7 @@ const AttendanceList = ({ student, updateStudentStatus, deleteStudent }) => {
                 >
                     P
                 </button>
-                {/* Mark Leave */}
+                {/* Mark Late */}
                 <button
                     className={getButtonClass('L')}
                     onClick={() => updateStudentStatus(student.id, 'L')}
