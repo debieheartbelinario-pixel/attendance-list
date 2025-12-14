@@ -45,7 +45,7 @@ function App() {
         setNewStudentName(''); // Clear the input
     };
 
-    // --- Summary Calculation (Read) ---
+
 
     const summary = useMemo(() => {
         const totalPresent = students.filter(s => s.status === 'P').length;
